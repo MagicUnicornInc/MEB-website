@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #7c3aed;
+  --secondary: #2563eb;
+}
+
+body {
+  @apply bg-gray-900 text-white;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature-card {
+  @apply p-6 rounded-xl bg-gray-800 border border-gray-700 hover:border-purple-500 transition-all duration-300;
+}
